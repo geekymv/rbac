@@ -20,7 +20,7 @@ public class WebLogAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(WebLogAspect.class);
 
-    ThreadLocal<Long> startTime = new ThreadLocal<>();
+    private static final ThreadLocal<Long> startTime = new ThreadLocal<>();
 
 
     @Pointcut("execution(public * com.ccdc.rbac.web..*.*(..))")

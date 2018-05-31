@@ -4,6 +4,8 @@ import com.ccdc.rbac.model.User;
 
 public interface UserService {
 
-    public User getUserById(String userId);
+    User getUserById(String userId);
+
+    User add(User user);
 
 }

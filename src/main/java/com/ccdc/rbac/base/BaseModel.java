@@ -1,5 +1,7 @@
 package com.ccdc.rbac.base;
 
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -9,6 +11,7 @@ import java.util.Date;
 public class BaseModel {
 
     @ApiModelProperty("主键")
+    @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
     @ApiModelProperty("是否启用：1启用，0禁用，默认是1")

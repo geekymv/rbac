@@ -31,7 +31,7 @@ public class UserController extends BaseController {
     @PostMapping("/add")
     @ApiOperation(value = "新增用户", notes = "新增用户接口")
     public User addUser(@RequestBody User user) {
-        return user;
+        return userService.add(user);
     }
 
     @GetMapping("/{id}")

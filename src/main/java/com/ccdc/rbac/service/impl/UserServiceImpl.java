@@ -18,4 +18,10 @@ public class UserServiceImpl extends BaseService implements UserService {
         logger.info("userId = " + userId);
         return userMapper.selectById(userId);
     }
+
+    @Override
+    public User add(User user) {
+       userMapper.insert(user);
+       return user;
+    }
 }

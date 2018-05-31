@@ -28,4 +28,5 @@ public class BaseModel {
 
     @ApiModelProperty("更新人ID")
     private String updateBy;
+
 }

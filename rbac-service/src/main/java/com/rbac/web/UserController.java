@@ -28,12 +28,13 @@ public class UserController extends BaseController {
         return null;
     }
 
-    @PostMapping("/add")
     @ApiOperation(value = "新增用户", notes = "新增用户接口")
+    @PostMapping("/add")
     public User addUser(@RequestBody User user) {
         return userService.add(user);
     }
 
+    @ApiOperation(value = "根据id查询用户", notes = "根据id查询用户接口")
     @GetMapping("/{id}")
     public User getUser(@PathVariable("id") String userId) {
         return userService.getUserInfo(userId);

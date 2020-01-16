@@ -1,5 +1,6 @@
 package com.rbac.model;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.rbac.base.BaseModel;
 import io.swagger.annotations.ApiModel;
@@ -20,6 +21,7 @@ public class User extends BaseModel {
     @ApiModelProperty(value = "姓名")
     private String username;
 
+    @JSONField(serialize = false)
     @ApiModelProperty(value = "密码")
     private String password;
 

@@ -17,6 +17,7 @@ public class HttpMessageConverterConfig {
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
         fastJsonConfig.setSerializerFeatures(
                 SerializerFeature.PrettyFormat,
+                SerializerFeature.WriteMapNullValue,
                 SerializerFeature.WriteDateUseDateFormat
         );
         fastConverter.setFastJsonConfig(fastJsonConfig);

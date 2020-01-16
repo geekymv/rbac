@@ -10,8 +10,8 @@ import lombok.ToString;
 
 @Data
 @ToString(callSuper=true)
-@TableName("user")
 @ApiModel
+@TableName("user")
 public class User extends BaseModel {
 
     @ApiModelProperty(value = "帐号")

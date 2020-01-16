@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rbac.repository.ApplicationMapper">
+
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        name
+    </sql>
+
+	<select id="selectIdPage" resultType="java.lang.Long">
+		select id from application
+		<where>
+				<if test="cm.name != null">
+					and	 name =#{cm.name}
+				</if>	
+				
+		</where>
+	</select>
+</mapper>

@@ -1,8 +1,8 @@
-package com.rbac.repository;
+package com.rbac.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.rbac.model.Resources;
+import com.rbac.model.Application;
 
 /**
  * <p>
@@ -12,6 +12,6 @@ import com.rbac.model.Resources;
  * @author geekymv
  * @since 2018-05-31
  */
-public interface ResourcesMapper extends BaseMapper<Resources> {
+public interface ApplicationMapper extends BaseMapper<Application> {
 
 }

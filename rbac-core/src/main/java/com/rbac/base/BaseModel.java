@@ -3,6 +3,7 @@ package com.rbac.base;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -21,8 +22,8 @@ public class BaseModel implements Serializable {
     private Integer enable;
 
     @ApiModelProperty("是否删除：1已删除，0正常（未删除），默认是0")
-    @TableField("is_delete")
-    private Integer isDelete;
+    @TableLogic
+    private Integer deleted;
 
     @ApiModelProperty("创建时间")
     @TableField("create_at")

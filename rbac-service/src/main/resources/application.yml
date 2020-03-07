@@ -1,5 +1,7 @@
 server:
   port: 9876
+  servlet:
+    context-path: /rbac
 
 spring:
   application:
@@ -12,6 +14,11 @@ mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
   typeAliasesPackage: com.rbac.model
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
@@ -21,5 +28,17 @@ logging:
     root: info
     com.rbac: debug
   file: /var/logs/rbac.log
+
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+info:
+  app:
+    name: ${spring.application.name}
 
 

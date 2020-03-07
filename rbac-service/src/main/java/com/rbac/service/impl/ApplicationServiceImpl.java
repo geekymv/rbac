@@ -2,7 +2,7 @@ package com.rbac.service.impl;
 
 import com.rbac.base.BaseService;
 import com.rbac.model.Application;
-import com.rbac.repository.ApplicationMapper;
+import com.rbac.mapper.ApplicationMapper;
 import com.rbac.service.ApplicationService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

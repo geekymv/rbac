@@ -25,17 +25,20 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel(value = "Resources", description = "资源（菜单）")
 public class Resources extends BaseModel {
 
-    @ApiModelProperty(value = "菜单名称")
+    @ApiModelProperty(value = "父菜单id")
+    private Long pid;
+
+    @ApiModelProperty(value = "资源名称")
     private String name;
 
     @ApiModelProperty(value = "资源路径")
     private String url;
 
+    @ApiModelProperty(value = "权限")
+    private String perms;
+
     @ApiModelProperty(value = "图标")
     private String icon;
-
-    @ApiModelProperty(value = "父菜单id")
-    private String pid;
 
     @TableField("app_id")
     @ApiModelProperty(value = "所属应用id")

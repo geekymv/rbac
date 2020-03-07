@@ -2,7 +2,7 @@ package com.rbac.service.impl;
 
 import com.rbac.base.BaseService;
 import com.rbac.model.Resources;
-import com.rbac.repository.ResourcesMapper;
+import com.rbac.mapper.ResourcesMapper;
 import com.rbac.service.ResourcesService;
 import org.springframework.stereotype.Service;
 

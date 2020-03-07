@@ -1,4 +1,4 @@
-package com.rbac.repository;
+package com.rbac.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

@@ -27,7 +27,7 @@
         <mybatis-plus-boot-starter.version>3.3.0</mybatis-plus-boot-starter.version>
         <mybatisplus.version>2.1.8</mybatisplus.version>
         <lombok.version>1.16.20</lombok.version>
-        <swagger2.version>2.7.0</swagger2.version>
+        <swagger2.version>2.10.0</swagger2.version>
         <velocity-engine-core.version>2.0</velocity-engine-core.version>
     </properties>
 
